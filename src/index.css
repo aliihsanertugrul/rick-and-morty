@@ -1,0 +1,109 @@
+/* header.css */
+.header{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    background:black;
+    padding:0px 20px;
+    position:sticky;
+    top:0;
+    z-index:99;
+    border-radius:10px;
+    margin-bottom:20px;
+}
+.header h1{
+color:#C4F013
+}
+.header .search-container{
+    position:relative;
+}
+.header .search-container .icon{
+    position:absolute;
+    top:10px;
+    right:10px;
+}
+.header .search-container input{
+    border-radius:10px;
+    padding:5px 10px;
+    border:none;
+    outline:none;
+    height:27px;
+    width:300px;
+    background:#C4F013;
+    position:relative;
+    
+}
+
+
+::placeholder {
+    color: white;
+    font-weight:bold;
+    text-align:center;
+    letter-spacing:10px;    
+}
+
+
+/* AllCharacters.css */
+.character-container {
+    display: flex;
+    flex-wrap: wrap; /* Kartlar satıra sığmadığında yeni satıra geçer */
+    gap: 20px; /* Kartlar arasındaki boşluk */
+  }
+  
+  .character-card {
+    flex: 1 1 calc(25% - 16px); /* Her kartın genişliğini ayarlayın */
+    box-sizing: border-box; /* Padding ve border'ları genişliğe dahil eder */
+ 
+    border-radius:10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    overflow: hidden; /* İçeriğin taşmasını önler */
+  transition: transform 0.3s ease;
+  }
+
+  .character-card img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease; /* Hover efekti için geçiş süresi */
+  }
+  
+  .character-card:hover img {
+    /* transform: scale(1.2);  */
+  }
+
+  .character-card .card img{
+    overflow:auto;
+    border-radius:10px 10px 0 0;
+    width:100%;
+  }
+
+  .card .card-body{
+    padding:10px;
+  }
+  
+ .detail-container{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:50px;
+  background:rgb(36,191,15,0.3);
+  padding:30px 0;
+
+ }
+
+ .detail-container img{
+  border:5px solid green;
+  border-radius:100%;
+ }
+
+ .detail-container h1{
+  text-align:center;
+ }
+
+ .specialities {
+  font-size:1.3rem;
+  margin-top:37px
+ }
+ .specialities p span{
+  font-weight:bold;
+ }
